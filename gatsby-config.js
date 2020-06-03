@@ -3,6 +3,7 @@ require(`dotenv`).config({
 })
 
 module.exports = {
+  pathPrefix: "/architecture"
   siteMetadata: {
     // Used for the title template on pages other than the index site
     siteTitle: `Stefana Dilova's Portfolio`,
@@ -11,7 +12,7 @@ module.exports = {
     // Can be used for e.g. JSONLD
     siteHeadline: `Stefana Dilova's Portfolio`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://test.mc.test.com`, // TODO: add one after gh pages integration
+    siteUrl: `https://nterziyski.github.io/architecture/`, // TODO: add one after gh pages integration
     // Used for SEO
     siteDescription: `I'm an architect from Berlin and this is my Master Thesis`,
     // Will be set on the <html /> tag
