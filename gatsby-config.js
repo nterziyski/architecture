@@ -3,7 +3,7 @@ require(`dotenv`).config({
 })
 
 module.exports = {
-  pathPrefix: "/architecture"
+  pathPrefix: "/architecture",
   siteMetadata: {
     // Used for the title template on pages other than the index site
     siteTitle: `Stefana Dilova's Portfolio`,
