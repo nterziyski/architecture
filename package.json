@@ -2,6 +2,7 @@
   "private": false,
   "name": "architecture",
   "description": "Architecture Portfolio",
+  "homepage": "http://nterziyski.github.io/architecture",
   "version": "0.1",
   "author": "Nikolay Terziyski",
   "license": "BSD-3",
@@ -13,7 +14,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.5",
