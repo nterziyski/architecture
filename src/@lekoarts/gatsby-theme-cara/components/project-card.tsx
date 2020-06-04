@@ -26,21 +26,16 @@ const customStyles = {
 const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps) => {
   const [isModalOpen, setIsModalOpen] = React.useState(false)
   return (
-    <div>
+    <React.Fragment>
       <button
         className={className}
         onClick={() => setIsModalOpen(true)}
-        rel="noreferrer noopener"
         sx={{
           outline: `none`,
           border: `none`,
-          width: `100%`,
           boxShadow: `lg`,
           position: `relative`,
-          textDecoration: `none`,
           borderRadius: `lg`,
-          px: 4,
-          py: [4, 5],
           color: `white`,
           background: bg || `none`,
           transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -50,21 +45,7 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
             boxShadow: `xl`,
           },
         }}
-      >
-        <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
-        <div
-          sx={{
-            textTransform: `uppercase`,
-            letterSpacing: `wide`,
-            pt: 4,
-            fontSize: [4, 5],
-            fontWeight: `medium`,
-            lineHeight: 1,
-          }}
-        >
-          {title}
-        </div>
-      </button>
+      />
       <Modal
         size="xl"
         show={isModalOpen}
@@ -76,7 +57,7 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
           <ResponsiveEmbed src='https://www.youtube.com/embed/2yqz9zgoC-U' ratio='16:9' allowFullScreen />
         </Modal.Body>
       </Modal>
-    </div>
+    </React.Fragment>
   )
 }
 
