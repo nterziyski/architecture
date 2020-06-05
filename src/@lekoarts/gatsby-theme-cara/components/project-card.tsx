@@ -3,7 +3,6 @@ import React from "react"
 import { jsx } from "theme-ui"
 import { Modal, Button } from 'react-bootstrap'
 import ResponsiveEmbed from 'react-responsive-embed'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 type ProjectCardProps = {
   link: string

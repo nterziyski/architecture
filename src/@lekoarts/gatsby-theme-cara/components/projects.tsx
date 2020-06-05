@@ -6,6 +6,7 @@ import SVG from "@lekoarts/gatsby-theme-cara/src/components/svg"
 import { UpDown, UpDownWide } from "@lekoarts/gatsby-theme-cara/src//styles/animations"
 // @ts-ignore
 import ProjectsMDX from "@lekoarts/gatsby-theme-cara/src//sections/projects"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
@@ -23,7 +24,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             display: `grid`,
             gridGap: [4, 4, 4, 4],
             gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(2, 1fr)`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
+            h2: { gridColumn: `-1/1` },
           }}
         >
           <ProjectsMDX />

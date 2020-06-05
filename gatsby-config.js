@@ -28,6 +28,15 @@ module.exports = {
       // See the theme's README for all available options
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `cormorant garamond`,
+        ],
+        display: 'swap'
+      }
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
   ],
