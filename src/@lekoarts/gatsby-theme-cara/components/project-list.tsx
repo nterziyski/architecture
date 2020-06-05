@@ -16,7 +16,7 @@ const ProjectList = () => {
   return (
     <React.Fragment>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 1"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -24,7 +24,7 @@ const ProjectList = () => {
         Description of project 1
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 2"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
@@ -32,7 +32,7 @@ const ProjectList = () => {
         Description of project 2
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(three, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 3"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
@@ -40,7 +40,7 @@ const ProjectList = () => {
         Description of project 3
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(four, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 4"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
@@ -48,7 +48,7 @@ const ProjectList = () => {
         Description of project 4
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(five, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 3"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #009385 0%, #FCBC21 100%)"
@@ -56,7 +56,7 @@ const ProjectList = () => {
         Description of project 3
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(six, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 4"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #DA852F 0%, #90FF4E 100%)"
@@ -64,7 +64,7 @@ const ProjectList = () => {
         Description of project 4
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 3"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #001625 0%, #FA1729 100%)"
@@ -72,7 +72,7 @@ const ProjectList = () => {
         Description of project 3
       </ProjectCard>
       <ProjectCard
-        className={cx(upAndDowns[getRandomInt(3)], effects[getRandomInt(4)], sizes[getRandomInt(4)])}
+        className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 4"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #DAF647 0%, #B17A76 100%)"
@@ -82,6 +82,42 @@ const ProjectList = () => {
     </React.Fragment>
   )
 }
+
+const one = css`
+  top: -20px;
+  left: 45px;
+  width: 320px;
+  height: 260px;
+`
+
+const two = css`
+  width: 550px;
+  height: 290px;
+`
+
+const three = css`
+  top: -30px;
+  left: calc(100% - 315px);
+  width: 285px;
+  height: 160px;
+`
+
+const four = css`
+  left: 100px;
+  width: 510px;
+  height: 285px;
+`
+
+const five = css`
+  top: -100px;
+  width: 650px;
+  height: 350px;
+`
+
+const six = css`
+  width: 360px;
+  height: 200px;
+`
 
 const card = css`
   animation: up-down1 4s ease-in-out infinite alternate;

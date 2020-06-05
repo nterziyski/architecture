@@ -22,7 +22,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
           sx={{
             display: `grid`,
             gridGap: [4, 4, 4, 4],
-            gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(3, 1fr)`, `repeat(4, 1fr)`],
+            gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(2, 1fr)`],
             h2: { gridColumn: `-1/1`, color: `white !important` },
           }}
         >
