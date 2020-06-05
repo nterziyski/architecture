@@ -10,7 +10,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
       bg="divider"
-      clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
+      clipPath="polygon(0 15%, 100% 15%, 100% 85%, 0 85%)"
       speed={0.2}
       offset={offset}
       factor={factor}
