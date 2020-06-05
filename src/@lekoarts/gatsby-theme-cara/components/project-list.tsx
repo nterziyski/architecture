@@ -9,9 +9,9 @@ function getRandomInt(max) {
 }
 
 const ProjectList = () => {
-  const upAndDowns = [card, cardAlt, cardThird]
-  const effects = [scaledDown, scaledUp, skewed, skewedNeg]
-  const sizes = [small, normal, medium, big]
+  const upAndDowns = [undefined, undefined, undefined, undefined] // [card, cardAlt, cardThird]
+  const effects = [undefined, undefined, undefined, undefined] // [scaledDown, scaledUp, skewed, skewedNeg]
+  //const sizes = [small, normal, medium, big]
 
   return (
     <React.Fragment>
@@ -64,7 +64,7 @@ const ProjectList = () => {
         Description of project 4
       </ProjectCard>
       <ProjectCard
-        className={cx(one, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
+        className={cx(one, 'seven', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 3"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #001625 0%, #FA1729 100%)"
@@ -72,7 +72,7 @@ const ProjectList = () => {
         Description of project 3
       </ProjectCard>
       <ProjectCard
-        className={cx(two, upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
+        className={cx(two, 'eight', upAndDowns[getRandomInt(3)], effects[getRandomInt(4)])}
         title="Project 4"
         link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         bg="linear-gradient(to right, #DAF647 0%, #B17A76 100%)"
@@ -83,40 +83,62 @@ const ProjectList = () => {
   )
 }
 
-const one = css`
-  top: -20px;
-  left: 45px;
-  width: 320px;
-  height: 260px;
-`
-
-const two = css`
-  width: 550px;
-  height: 290px;
-`
-
-const three = css`
-  top: -30px;
-  left: calc(100% - 315px);
+const xs = css`
   width: 285px;
   height: 160px;
 `
 
+const s = css`
+  width: 460px;
+  height: 260px;
+`
+
+const m = css`
+  width: 550px;
+  height: 310px;
+`
+
+const l = css`
+  width: 650px;
+  height: 365px;
+`
+
+const one = css`
+  top: -20px;
+  left: 45px;
+  ${s};
+  &.seven {
+    top: -105px;
+    left: 65px;
+  }
+`
+
+const two = css`
+  ${m};
+  &.eight {
+    top: -70px;
+    left: 20px;
+  }
+`
+
+const three = css`
+  ${xs};
+  top: -30px;
+  left: calc(100% - 315px);
+`
+
 const four = css`
   left: 100px;
-  width: 510px;
-  height: 285px;
+  ${m};
 `
 
 const five = css`
-  top: -100px;
-  width: 650px;
-  height: 350px;
+  top: -140px;
+  ${l};
 `
 
 const six = css`
-  width: 360px;
-  height: 200px;
+  ${xs};
 `
 
 const card = css`
