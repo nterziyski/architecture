@@ -39,7 +39,19 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0e1f40a28f4f7bc1dcf813565a98e748"
+    "revision": "0b234bbb9fb02fa00ac4e41787558d8c"
+  },
+  {
+    "url": "google-fonts/s/cormorantgaramond/v7/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEPjuz-KzhM.woff2",
+    "revision": "41fbea9e321bc22357715753d447afb8"
+  },
+  {
+    "url": "google-fonts/s/cormorantgaramond/v7/co3YmX5slCNuHLi8bLeY9MK7whWMhyjQAllfvg-I.woff2",
+    "revision": "c4bcdcb79ad0aa3490ee08653557694b"
+  },
+  {
+    "url": "google-fonts/s/cormorantgaramond/v7/co3YmX5slCNuHLi8bLeY9MK7whWMhyjQWlhfvg-I.woff2",
+    "revision": "94473e4e2e1a288829625c2042ccd318"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
