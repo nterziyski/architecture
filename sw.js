@@ -26,20 +26,20 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-aad3ab8e4701c94c1dfb.js"
+    "url": "webpack-runtime-b409d84462ac017e634d.js"
   },
   {
     "url": "framework-43898561dafbdf32aefd.js"
   },
   {
-    "url": "app-a2dda949aa32a320c565.js"
+    "url": "app-5c1a2414581b003bf67f.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-9423e06cb6889cf456aa.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3a8c2d545a1eb3971336b16127a4c3ad"
+    "revision": "77a31a9ee934df28e347a800a8a3d54f"
   },
   {
     "url": "google-fonts/s/cormorantgaramond/v7/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEPjuz-KzhM.woff2",
@@ -59,7 +59,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "d72ebbd1b0143b811caba525e7147036"
+    "revision": "139aaf455b81d09a542cf25a1f5b2da3"
   },
   {
     "url": "manifest.json",
@@ -86,12 +86,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/architecture`), ``)
+  pathname = pathname.replace(new RegExp(`^/architecture/architecture`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/architecture/app-a2dda949aa32a320c565.js`))) {
+  if (!resources || !(await caches.match(`/architecture/architecture/app-5c1a2414581b003bf67f.js`))) {
     return await fetch(event.request)
   }
 
@@ -104,7 +104,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/architecture/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/architecture/architecture/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
