@@ -32,7 +32,7 @@ const wrapper = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 675px;
+  max-width: 695px;
   margin: 0 auto;
 `
 

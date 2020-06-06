@@ -9,12 +9,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+      bg="#3c3c3c"
       speed={0}
       offset={offset}
       factor={factor}
     />
-    <Content speed={0.4} offset={offset} factor={factor}>
+    <Content speed={0.4} offset={offset} factor={1.8}>
       <div sx={{ display: `flex`, justifyContent: `center`, width: [`full`], textAlign: `left` }}>
         <div
           sx={{
