@@ -29,13 +29,15 @@ module.exports = {
       options: {},
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
-          `cormorant garamond`,
+          {
+            family: `Cormorant Garamond`,
+            variants: [`300`, `300i`, `500`]
+          },
         ],
-        display: 'swap'
-      }
+      },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
