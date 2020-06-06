@@ -13,28 +13,28 @@
   Cache-Control: public, max-age=31536000, immutable
 /component---node-modules-gatsby-plugin-offline-app-shell-js-9423e06cb6889cf456aa.js
   Cache-Control: public, max-age=31536000, immutable
-/webpack-runtime-b409d84462ac017e634d.js
+/webpack-runtime-aad3ab8e4701c94c1dfb.js
   Cache-Control: public, max-age=31536000, immutable
 /framework-43898561dafbdf32aefd.js
   Cache-Control: public, max-age=31536000, immutable
-/app-5c1a2414581b003bf67f.js
+/app-d9df50e2fdffad7f6035.js
   Cache-Control: public, max-age=31536000, immutable
 /static/*
   Cache-Control: public, max-age=31536000, immutable
 /sw.js
   Cache-Control: no-cache
-/architecture/architecture/
-  Link: </architecture/architecture/webpack-runtime-b409d84462ac017e634d.js>; rel=preload; as=script
-  Link: </architecture/architecture/framework-43898561dafbdf32aefd.js>; rel=preload; as=script
-  Link: </architecture/architecture/app-5c1a2414581b003bf67f.js>; rel=preload; as=script
-  Link: </architecture/architecture/styles-faa02be05049b5d16183.js>; rel=preload; as=script
-  Link: </architecture/architecture/component---src-lekoarts-gatsby-theme-cara-templates-cara-tsx-ead602715ad66f4c1ec1.js>; rel=preload; as=script
-  Link: </architecture/architecture/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </architecture/architecture/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
-/architecture/architecture/offline-plugin-app-shell-fallback/
-  Link: </architecture/architecture/webpack-runtime-b409d84462ac017e634d.js>; rel=preload; as=script
-  Link: </architecture/architecture/framework-43898561dafbdf32aefd.js>; rel=preload; as=script
-  Link: </architecture/architecture/app-5c1a2414581b003bf67f.js>; rel=preload; as=script
-  Link: </architecture/architecture/component---node-modules-gatsby-plugin-offline-app-shell-js-9423e06cb6889cf456aa.js>; rel=preload; as=script
-  Link: </architecture/architecture/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </architecture/architecture/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
+/architecture/
+  Link: </architecture/webpack-runtime-aad3ab8e4701c94c1dfb.js>; rel=preload; as=script
+  Link: </architecture/framework-43898561dafbdf32aefd.js>; rel=preload; as=script
+  Link: </architecture/app-d9df50e2fdffad7f6035.js>; rel=preload; as=script
+  Link: </architecture/styles-faa02be05049b5d16183.js>; rel=preload; as=script
+  Link: </architecture/component---src-lekoarts-gatsby-theme-cara-templates-cara-tsx-ead602715ad66f4c1ec1.js>; rel=preload; as=script
+  Link: </architecture/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </architecture/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/architecture/offline-plugin-app-shell-fallback/
+  Link: </architecture/webpack-runtime-aad3ab8e4701c94c1dfb.js>; rel=preload; as=script
+  Link: </architecture/framework-43898561dafbdf32aefd.js>; rel=preload; as=script
+  Link: </architecture/app-d9df50e2fdffad7f6035.js>; rel=preload; as=script
+  Link: </architecture/component---node-modules-gatsby-plugin-offline-app-shell-js-9423e06cb6889cf456aa.js>; rel=preload; as=script
+  Link: </architecture/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </architecture/page-data/offline-plugin-app-shell-fallback/page-data.json>; rel=preload; as=fetch; crossorigin
