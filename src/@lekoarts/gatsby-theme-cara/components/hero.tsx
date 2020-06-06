@@ -40,7 +40,7 @@ const headline = css`
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 8px;
@@ -50,7 +50,7 @@ const text = css`
   margin: 0;
   font-weight: 300;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 12pt !important;
+  font-size: 14pt !important;
   text-align: center;
 `
 
