@@ -32,7 +32,7 @@ const wrapper = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 575px;
+  max-width: 675px;
   margin: 0 auto;
 `
 
@@ -40,7 +40,7 @@ const headline = css`
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 16pt;
+  font-size: 1.5rem;
   font-weight: 500;
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 8px;
@@ -50,7 +50,7 @@ const text = css`
   margin: 0;
   font-weight: 300;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 14pt !important;
+  font-size: 1.25rem !important;
   text-align: center;
 `
 
