@@ -34,16 +34,16 @@ const ProjectCard = ({ className, link, title, children, bg }: ProjectCardProps)
           border: `none`,
           boxShadow: `lg`,
           position: `relative`,
-          borderRadius: `lg`,
           color: `white`,
-          background: bg || `none`,
           transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
+          fontSize: `1.75rem`,
+          fontWeight: `500`,
           "&:hover": {
             color: `white !important`,
             boxShadow: `xl`,
           },
         }}
-      />
+      >{title}</button>
       <Modal
         size="xl"
         show={isModalOpen}
