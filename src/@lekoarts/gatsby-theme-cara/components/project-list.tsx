@@ -104,7 +104,7 @@ const l = css`
 `
 
 const one = css`
-  background-image: url(/first.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}first.jpg);
   background-size: 460px 260px;
   top: -20px;
   left: 45px;
@@ -116,7 +116,7 @@ const one = css`
 `
 
 const two = css`
-  background-image: url(/second.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}second.jpg);
   background-size: 550px 310px;
   ${m};
   &.eight {
@@ -126,7 +126,7 @@ const two = css`
 `
 
 const three = css`
-  background-image: url(/third.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}third.jpg);
   background-size: 285px 160px;
   ${xs};
   top: -30px;
@@ -134,14 +134,14 @@ const three = css`
 `
 
 const four = css`
-  background-image: url(/fourth.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}fourth.jpg);
   background-size: 550px 310px;
   left: 100px;
   ${m};
 `
 
 const five = css`
-  background-image: url(/fifth.jpg);
+  background-image: url(/${process.env.IMG_PREFIX || ''}fifth.jpg);
   background-size: 650px 365px;
   top: -140px;
   ${l};

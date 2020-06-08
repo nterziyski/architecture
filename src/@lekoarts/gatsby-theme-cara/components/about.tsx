@@ -9,7 +9,6 @@ import AboutMDX from "@lekoarts/gatsby-theme-cara/src/sections/about"
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="divider"
       speed={0}
       offset={offset}
       factor={factor}
